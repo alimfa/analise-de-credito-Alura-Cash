@@ -1,4 +1,4 @@
-# Desafio realizado no Segundo Challenge DataScience da Alura
+# Desafio realizado no Challenge Dados da Alura
 
 ## INFORMAÇÕES GERAIS
 **EMPRESA**: banco digital internacional chamado Alura Cash
