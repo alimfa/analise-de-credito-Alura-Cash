@@ -1,11 +1,11 @@
-# Desafio realizado no Segundo Challenge DataScience da Alura
+# Desafio realizado no Challenge Dados da Alura
 
 ## INFORMAÇÕES GERAIS
 **EMPRESA**: banco digital internacional chamado Alura Cash
 
 **OBJETIVO**: Diminuir as perdas financeiras por conta de pessoas mutuarias que não quitam suas dívidas.
 
-**COMO FAZER**: Encontrar padrões para identificar os clientes que sejam potenciais inadimplentes. Para isso, deseja-se desenvolver um modelo de **Machine-Learning** para classificar os solicitantes de empréstimo que possívelmente se tornem inadiplentes e apresentar os resultados em um dashboard para os tomadores de decisão da empresa. 
+**COMO FAZER**: Encontrar padrões para identificar os clientes que sejam potenciais inadimplentes. Para isso, deseja-se desenvolver um modelo de **Machine-Learning** para classificar os solicitantes de empréstimo que possívelmente se tornem inadiMplentes e apresentar os resultados em um dashboard para os tomadores de decisão da empresa. 
 
 
 ## 01 - Consulta e Manipulação da Base de Dados
@@ -61,3 +61,8 @@ Tabela que relaciona os IDs de cada informação da pessoa solicitante
 |`person_id`|ID da pessoa solicitante|
 |`loan_id`|ID da solicitação de empréstico de cada solicitante|
 |`cb_id`|ID do histórico de cada solicitante|
+
+
+## 02 - Modelo preditivo para classificar cliente inadimplentes
+
+O desenvolvimento do modelo está neste [notebook](2-Machine-Learning-para-Classificacao-de-Inadimplentes.ipynb).
