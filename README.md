@@ -88,7 +88,7 @@ MATRIZ CONFUSÃO:
 CURVA ROC E AUC:
 
 
-![curvaROC](Graficos/curvaROC.jpeg)
+![curvaROC](Graficos/ROC_CURVE.jpeg)
 
 
 
