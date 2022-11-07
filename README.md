@@ -66,7 +66,7 @@ Tabela que relaciona os IDs de cada informação da pessoa solicitante
 ## 02 - Modelo preditivo para classificar cliente inadimplentes
 
 Primeiramente foi feito a limpeza e processamento dos dados, retirando valores nulos, errados e os Outliers.
-Em seguida foi realizada uma análise dos dados prévia dentro do próprio notebook e os dados já tratados foram salvos em um novo [arquivo](Dados/dados_tratados.csv) que será posteriormente utilizado e apresentado no POwerBI. 
+Em seguida foi realizada uma análise dos dados prévia dentro do próprio notebook e os dados já tratados foram salvos em um novo [arquivo](Dados/dados_tratados.csv) que será posteriormente utilizado e apresentado no PowerBI. 
 
 
 O modelo que que apresentou melhor desempenho foi o modelo que utiliza o algoritmo K Neighbors Classifier, e após ter seus hiperparametetros otimizados, apresendou as seguintes métricas:
