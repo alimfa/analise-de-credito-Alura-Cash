@@ -8,7 +8,7 @@
 **COMO FAZER**: Encontrar padrões para identificar os clientes que sejam potenciais inadimplentes. Para isso, deseja-se desenvolver um modelo supervisionado de **Machine Learning** para classificar os solicitantes de empréstimo que possívelmente se tornem inadimplentes e apresentar os resultados em um dashboard interativo para os tomadores de decisão. 
 
 
-## 01 - Consulta e Manipulação da Base de Dados
+## 01 - Consulta e Manipulação da Base de Dados usando SQL
 
 A empresa disponibilizou os dados referentes às informações dos clientes através de um [dump](Dados/dumps), o que possibilitou a criação de um no Banco de Dados usando o MySQL. O primeiro passo foi tratar o conjunto de dados para deixá-los padronizados no texto, bem como, corrigir inconsistências relacionadas ao tipo e estruturação. Após o tratamento dos dados, optou-se por juntar todas as tabelas conforme ID do solicitante, ID da solicitação e ID do score de cada solicitante.
 
@@ -78,11 +78,17 @@ O modelo que que apresentou melhor desempenho foi o modelo que utiliza o algorit
 | Sensibilidade | ... | 95,98%|
 | F1 | ... | 89,98%|
 
+
 MATRIZ CONFUSÃO:
+
+
+![matriz confusao](Graficos/matriz-confusao.jpeg)
 
 
 CURVA ROC E AUC:
 
+
+![curvaROC](Graficos/curvaROC.jpeg)
 
 
 
@@ -92,13 +98,24 @@ O desenvolvimento do modelo está neste [notebook](2-Machine-Learning-para-Class
 ## 03 - API para rodar o modelo e classificar novos clientes
 
 A terceira etapa deste projeto foi desenvolver um API usando o **FastAPI** caqpz de rodar o modelo desnvolvido e classificar um novo cliente mutuário como possível inadimplente ou adimplente. 
-O código do API está disponível neste arquivo.
+O código do API está disponível neste [arquivo](03-APIPowerBI.py).
 
 ## 04 -  Dashboard interativo no Power BI
 
 Por fim, foi desenvolvido um dashboard interativo no qual é possível incluir o dados de um novo cliente em forma de parâmetros, e uma vez que o PowerBI esteja conectado ao API e online, o dashboard irá retornar se este novo cliente solicitante  terá o emprestimo liberado ou negado, e qual a probabilidade calculada deste cliente ser adimplente ou inadimplente, como segue o exemplo: 
 
-![exemplo](Imagens/Alteracao de parametros_Analise Mutuario.jpg)
+![exemplo](Imagens/Alteracao_de_parametros_Analise_Mutuario.jpg)
 
 
+![liberacao de credito](Imagens/PowerBI_Analise_Mutuario.jpg)
+
+
+Além disso, o dashboard também apresenta gráficos com os dados extraídos da base de dados inicialmente, os quais foram utilizados para treinar e testar o modelo de preditivo.
+
+
+![pagina 2](Imagens/PowerBI_Clientes_e_Inadimplencia.jpg)
+![pagina 3](Imagens/PowerBI_Outros_Indicadores.jpg)
+
+
+O dashboard interativo pode ser acessado por [aqui](https://app.powerbi.com/view?r=eyJrIjoiOWNlMWEwNjAtNTQ5MC00ZDY1LWIzNmUtOGYzMzNlODVkZDQzIiwidCI6ImMwMGMyNzg3LTI3NmItNDE4ZC1iZjFjLTFkOTVhNDY3NTZjZSJ9&pageName=ReportSection) e este é o [arquivo](04-Visualizacao-dados-e-Previsao-de-inadimplencia.pbix) editável do PowerBI.
 
