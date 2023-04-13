@@ -92,8 +92,7 @@ CURVA ROC E AUC:
 
 
 
-O desenvolvimento do modelo está neste [notebook](2-Machine-Learning-para-Classificacao-de-Inadimplentes.ipynb).
-
+O desenvolvimento do modelo está neste [notebook](02-Machine-Learning-para-Classificacao-de-Inadimplentes.ipynb).
 
 ## 03 - API para rodar o modelo e classificar novos clientes
 
