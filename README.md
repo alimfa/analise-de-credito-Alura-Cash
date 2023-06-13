@@ -1,6 +1,7 @@
 # Desafio realizado no Challenge Dados da Alura
 
 ## INFORMAÇÕES GERAIS
+
 **EMPRESA FICTÍCIA**: banco digital internacional chamado Alura Cash
 
 **OBJETIVO**: Diminuir as perdas financeiras por conta de pessoas mutuarias que não quitam suas dívidas.
